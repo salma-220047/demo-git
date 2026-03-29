@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Nexora</title>
+    <title>Dashboard | Aurum</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body style="background-color: var(--secondary);">
     <div class="dashboard-container">
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-logo">
-                <span class="logo-text" style="color: white; font-size: 1.25rem;">Aurum Admn</span>
+                <span class="logo-text" style="color: white; font-size: 1.25rem;">Nexora Admin</span>
             </div>
             <nav class="sidebar-nav">
                 <ul>
@@ -21,7 +23,7 @@
                     <li><a href="#">Customers</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#" style="margin-top: 4rem;">Settings</a></li>
-                    <li><a href="index.html">View Site</a></li>
+                    <li><a href="login.php"><span>Logout</span></a></li>
                 </ul>
             </nav>
         </aside>
@@ -38,7 +40,8 @@
                         <p style="font-weight: 600; font-size: 0.9rem;">Alex Rivers</p>
                         <p style="font-size: 0.75rem; color: var(--text-muted);">Manager</p>
                     </div>
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--accent); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                    <div
+                        style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--accent); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
                         AR
                     </div>
                 </div>
@@ -68,37 +71,53 @@
                     </div>
                 </div>
 
-                <div style="background: var(--white); padding: 2.5rem; border-radius: 8px; box-shadow: var(--shadow-sm);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <div
+                    style="background: var(--white); padding: 2.5rem; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
                         <h3 style="font-size: 1.25rem;">Recent Activity</h3>
                         <a href="#" style="color: var(--accent); font-size: 0.9rem; font-weight: 600;">View Report</a>
                     </div>
                     <table style="width: 100%; border-collapse: collapse; text-align: left;">
                         <thead>
                             <tr style="border-bottom: 2px solid var(--secondary);">
-                                <th style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Customer</th>
-                                <th style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Product</th>
-                                <th style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Status</th>
-                                <th style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Amount</th>
+                                <th
+                                    style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+                                    Customer</th>
+                                <th
+                                    style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+                                    Product</th>
+                                <th
+                                    style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+                                    Status</th>
+                                <th
+                                    style="padding: 1rem 0; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">
+                                    Amount</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr style="border-bottom: 1px solid var(--secondary);">
                                 <td style="padding: 1.5rem 0; font-weight: 500;">Emma Watson</td>
-                                <td style="padding: 1.5rem 0;">Aurum Chrono Watch</td>
-                                <td style="padding: 1.5rem 0;"><span style="padding: 0.25rem 0.75rem; background: #e8f5e9; color: #2e7d32; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Completed</span></td>
+                                <td style="padding: 1.5rem 0;">Nexora Chrono Watch</td>
+                                <td style="padding: 1.5rem 0;"><span
+                                        style="padding: 0.25rem 0.75rem; background: #e8f5e9; color: #2e7d32; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Completed</span>
+                                </td>
                                 <td style="padding: 1.5rem 0; font-weight: 600;">$850.00</td>
                             </tr>
                             <tr style="border-bottom: 1px solid var(--secondary);">
                                 <td style="padding: 1.5rem 0; font-weight: 500;">James Miller</td>
                                 <td style="padding: 1.5rem 0;">Noir Leather Tote</td>
-                                <td style="padding: 1.5rem 0;"><span style="padding: 0.25rem 0.75rem; background: #fff3e0; color: #ef6c00; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Pending</span></td>
+                                <td style="padding: 1.5rem 0;"><span
+                                        style="padding: 0.25rem 0.75rem; background: #fff3e0; color: #ef6c00; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Pending</span>
+                                </td>
                                 <td style="padding: 1.5rem 0; font-weight: 600;">$420.00</td>
                             </tr>
                             <tr style="border-bottom: 1px solid var(--secondary);">
                                 <td style="padding: 1.5rem 0; font-weight: 500;">Sarah Chen</td>
                                 <td style="padding: 1.5rem 0;">Lumina Desk Lamp</td>
-                                <td style="padding: 1.5rem 0;"><span style="padding: 0.25rem 0.75rem; background: #e8f5e9; color: #2e7d32; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Completed</span></td>
+                                <td style="padding: 1.5rem 0;"><span
+                                        style="padding: 0.25rem 0.75rem; background: #e8f5e9; color: #2e7d32; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">Completed</span>
+                                </td>
                                 <td style="padding: 1.5rem 0; font-weight: 600;">$195.00</td>
                             </tr>
                         </tbody>
@@ -108,4 +127,5 @@
         </main>
     </div>
 </body>
+
 </html>
