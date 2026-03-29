@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryLab | Attribute Methods</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">JqueryLab</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="selectors.html">Selectors</a>
+            <a href="events.html">Events</a>
+            <a href="effects.html">Effects</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Attribute Methods Lab</h1>
+        <p>Learn how to manipulate HTML attributes and get values from inputs.</p>
+
+        <div class="grid">
+            <!-- Attr() & RemoveAttr() -->
+            <div class="card">
+                <h3>attr() & removeAttr()</h3>
+                <div class="demo-area">
+                    <img id="demo-img" src="https://picsum.photos/300/200" alt="Sample Picture" title="Amazing Image" style="border-radius: 10px; max-width: 100%;">
+                    <div id="attr-output" style="margin-top: 1rem; color: var(--accent);">Output will appear here</div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <button id="btn-get-attr" class="outline">Get Alt Text</button>
+                    <button id="btn-set-attr" class="secondary">Change Image Src</button>
+                    <button id="btn-remove-attr" class="accent">Remove Title</button>
+                </div>
+            </div>
+
+            <!-- Val() -->
+            <div class="card">
+                <h3>val() Method</h3>
+                <div class="demo-area">
+                    <label>Enter your name:</label>
+                    <input type="text" id="name-input" placeholder="Type something..." style="margin-top: 0.5rem;">
+                    <div id="val-output" style="margin-top: 1rem; color: var(--primary);">Current Value: None</div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <button id="btn-get-val" class="secondary">Get Value</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index.html" style="color: var(--text-muted);">Back to Home</a>
+        </div>
+    </div>
+
+    <div id="message-box">Action Triggered!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

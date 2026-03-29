@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryLab | traversing</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .node {
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">JqueryLab</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="selectors.html">Selectors</a>
+            <a href="events.html">Events</a>
+            <a href="effects.html">Effects</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>DOM Traversing Lab</h1>
+        <p>Navigate the elements tree. Click a node and use buttons to find its relatives.</p>
+
+        <div class="grid">
+            <!-- Tree Demo -->
+            <div class="card">
+                <h3>The DOM Tree</h3>
+                <div class="demo-area">
+                    <div id="root" class="node">
+                        Parent (Root)
+                        <div class="node children">
+                            Child 1 (Sibling)
+                            <div class="node inner-target">Grandchild 1.1</div>
+                        </div>
+                        <div class="node children">
+                            Child 2 (Target)
+                            <div class="node inner-target">Grandchild 2.1</div>
+                        </div>
+                        <div class="node children">
+                            Child 3 (Sibling)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Traversal Actions -->
+            <div class="card">
+                <h3>Traversal Actions</h3>
+                <div class="demo-area">
+                    <button id="btn-get-parent" class="outline">parent()</button>
+                    <button id="btn-get-children" class="outline">children()</button>
+                    <button id="btn-find-inner" class="outline">find(".inner-target")</button>
+                    <button id="btn-siblings" class="outline">siblings()</button>
+                    <button id="btn-next" class="outline">next()</button>
+                    <button id="btn-prev" class="outline">prev()</button>
+                    <button id="btn-filter-nodes" class="secondary">filter(":even")</button>
+                </div>
+                <div style="margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">
+                    Step 1: Click a node below to select it.
+                    Step 2: Use buttons above to traverse the DOM.
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index.html" style="color: var(--text-muted);">Back to Home</a>
+        </div>
+    </div>
+
+    <div id="message-box">Action Triggered!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

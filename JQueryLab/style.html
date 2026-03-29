@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryLab | Style Manipulation</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">JqueryLab</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="selectors.html">Selectors</a>
+            <a href="events.html">Events</a>
+            <a href="effects.html">Effects</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Style & CSS Manipulation</h1>
+        <p>Dynamically change colors, toggle classes, and switch themes on the fly.</p>
+
+        <div class="grid">
+            <!-- Class Methods -->
+            <div class="card">
+                <h3>Class Manipulation</h3>
+                <p>addClass(), removeClass(), toggleClass()</p>
+                <div class="demo-area">
+                    <div class="style-box box" style="width: 100%; height: 100px;">Style Target</div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <button id="btn-add-class" class="outline">Add Highlight</button>
+                    <button id="btn-remove-class" class="outline">Remove Highlight</button>
+                    <button id="btn-toggle-class" class="secondary">Toggle Highlight</button>
+                    <button id="btn-check-class" class="accent">Has Class?</button>
+                </div>
+            </div>
+
+            <!-- CSS & Theme -->
+            <div class="card">
+                <h3>CSS & Themes</h3>
+                <p>css() method and theme switching.</p>
+                <div class="demo-area">
+                    <button id="btn-set-css" style="width: 100%; margin-bottom: 1rem;">Apply Custom Inline CSS</button>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin-bottom: 1rem;">
+                    <p style="margin-bottom: 1rem; color: var(--text-muted);">Try switching the global theme:</p>
+                    <button id="btn-toggle-theme" class="accent" style="width: 100%;">Switch to Light Mode</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index.html" style="color: var(--text-muted);">Back to Home</a>
+        </div>
+    </div>
+
+    <div id="message-box">Action Triggered!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

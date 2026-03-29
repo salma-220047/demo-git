@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryLab | Effects & Animations</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">JqueryLab</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="selectors.html">Selectors</a>
+            <a href="events.html">Events</a>
+            <a href="effects.html" class="active">Effects</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Effects & Animations Lab</h1>
+        <p>Bring your UI to life with pre-built effects and custom animations.</p>
+
+        <div class="grid">
+            <!-- Basic Effects -->
+            <div class="card">
+                <h3>Basic Effects</h3>
+                <div class="demo-area" style="text-align: center;">
+                    <button id="btn-show" class="outline">show()</button>
+                    <button id="btn-hide" class="outline">hide()</button>
+                    <button id="btn-toggle-effect" class="outline">toggle()</button>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1rem 0;">
+                    <div id="effect-box" class="box" style="width: 100px; height: 100px; margin: 0 auto; background: var(--primary);">Lab Box</div>
+                </div>
+            </div>
+
+            <!-- Fade & Slide -->
+            <div class="card">
+                <h3>Fade & Slide</h3>
+                <div class="demo-area">
+                    <p style="margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Fade Controls:</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button id="btn-fade-in" class="secondary">fadeIn()</button>
+                        <button id="btn-fade-out" class="secondary">fadeOut()</button>
+                        <button id="btn-fade-toggle" class="secondary">fadeToggle()</button>
+                    </div>
+                    <p style="margin: 1rem 0 0.5rem; font-size: 0.9rem; color: var(--text-muted);">Slide Controls:</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <button id="btn-slide-down" class="accent">slideDown()</button>
+                        <button id="btn-slide-up" class="accent">slideUp()</button>
+                        <button id="btn-slide-toggle" class="accent">slideToggle()</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid" style="margin-top: 2rem;">
+            <!-- Custom Animation -->
+            <div class="card">
+                <h3>Custom Animation</h3>
+                <div class="demo-area">
+                    <button id="btn-animate" style="width: 100%;" class="secondary">Run complex animate()</button>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-muted);">
+                        Animates width, height, opacity, and margin simultaneously.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Animation Queue -->
+            <div class="card">
+                <h3>Queue Management</h3>
+                <div class="demo-area">
+                    <button id="btn-stop" class="accent" style="width: 100%;">stop()</button>
+                    <button id="btn-delay" class="outline" style="width: 100%; margin-top: 0.5rem;">delay(2000)</button>
+                    <button id="btn-queue-demo" class="secondary" style="width: 100%; margin-top: 0.5rem;">queue() demo</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index.html" style="color: var(--text-muted);">Back to Home</a>
+        </div>
+    </div>
+
+    <div id="message-box">Action Triggered!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
