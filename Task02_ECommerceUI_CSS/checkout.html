@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Aurum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="images/logo.png" alt="Aurum" class="logo-img">
+                <span class="logo-text">Aurum</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="checkout-layout">
+                <div class="checkout-form-area">
+                    <h2 style="margin-bottom: 2rem;">Secure Checkout</h2>
+                    <form class="premium-form">
+                        <section class="form-section">
+                            <h4>Shipping Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="text" class="form-control" placeholder="123 Luxury Lane">
+                            </div>
+                        </section>
+                        
+                        <section class="form-section">
+                            <h4>Payment Details</h4>
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+                            </div>
+                        </section>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Complete Order</button>
+                    </form>
+                </div>
+                
+                <aside class="order-summary-sidebar">
+                    <div class="summary-card">
+                        <h3>Your Order</h3>
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span>$1,250.00</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span>$1,250.00</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Aurum Nexora</p>
+        </div>
+    </footer>
+</body>
+</html>
