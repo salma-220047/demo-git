@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Beginner Tasks</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      background: lightblue;
+      margin-top: 10px;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>JavaScript Tasks Demo</h1>
+
+  <p id="text">This is original text</p>
+  <button onclick="changeText()">Change Text</button>
+
+  <div id="box" onmouseover="hoverOn()" onmouseout="hoverOff()">
+    Hover Me
+  </div>
+
+  <button onclick="toggleStyle()">Toggle Style</button>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" id="nameInput" placeholder="Enter name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <button onclick="askName()">Enter Name</button>
+  <button onclick="printPage()">Print Page</button>
+
+  <script>
+
+    var a = 10;
+    let b = 20;
+    const c = 30;
+
+    console.log("Var:", a);
+    console.log("Let:", b);
+    console.log("Const:", c);
+
+    function add(x, y) {
+      return x + y;
+    }
+
+    const subtract = (x, y) => x - y;
+
+    console.log("Addition:", add(5, 3));
+    console.log("Subtraction:", subtract(10, 4));
+
+    alert("Welcome to JavaScript Tasks!");
+
+    let userInput = prompt("Enter something:");
+    console.log("User entered:", userInput);
+
+    function changeText() {
+      document.getElementById("text").innerText = "Text changed using JS!";
+    }
+
+    function addContent() {
+      let p = document.createElement("p");
+      p.innerText = "New dynamic content added!";
+      document.body.appendChild(p);
+    }
+
+    function removeContent() {
+      let items = document.querySelectorAll("p");
+      if (items.length > 0) {
+        items[items.length - 1].remove();
+      }
+    }
+
+    let toggled = false;
+
+    function toggleStyle() {
+      let box = document.getElementById("box");
+
+      if (!toggled) {
+        box.style.background = "orange";
+        box.style.color = "white";
+        box.style.fontSize = "20px";
+      } else {
+        box.style.background = "lightblue";
+        box.style.color = "black";
+        box.style.fontSize = "16px";
+      }
+
+      toggled = !toggled;
+    }
+
+    function hoverOn() {
+      document.getElementById("box").style.border = "3px solid green";
+    }
+
+    function hoverOff() {
+      document.getElementById("box").style.border = "none";
+    }
+
+    function submitForm(event) {
+      event.preventDefault();
+      let name = document.getElementById("nameInput").value;
+      console.log("Form submitted. Name:", name);
+      alert("Form submitted successfully!");
+    }
+
+    function askName() {
+      let name = prompt("What is your name?");
+      alert("Hello, " + name + "!");
+    }
+
+    function printPage() {
+      window.print();
+    }
+
+  </script>
+
+</body>
+</html>
