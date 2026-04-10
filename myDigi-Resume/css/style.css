@@ -1,0 +1,134 @@
+/* Custom Styles for Digi-Resume */
+:root {
+    --primary-color: #0dcaf0; /* info */
+    --secondary-color: #6610f2; /* purple */
+    --dark-bg: #121212;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+    padding: 15px 0;
+}
+
+.navbar.scrolled {
+    padding: 10px 0;
+    background: rgba(33, 37, 41, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    background: var(--primary-color);
+    filter: blur(150px);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Sections */
+section {
+    position: relative;
+}
+
+.py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+/* Progress Bars */
+.progress {
+    background-color: #e9ecef;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    border-radius: 50px;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Gallery Carousel */
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+/* Form Styling */
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+}
+
+/* Custom Component: Badge Animation */
+.badge {
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
+
+.badge:hover {
+    background-color: var(--primary-color) !important;
+}
